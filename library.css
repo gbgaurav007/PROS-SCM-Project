@@ -298,3 +298,299 @@ body {
     border-radius: 3px 0 0 3px;
   }
   
+  /* On hover*/
+  .prev:hover,
+  .next:hover {
+    background-color: rgb(49, 52, 66);
+  }
+  
+  /* Fading animation */
+  .cpluspluslang .fade {
+    animation-name: lang-fade;
+    animation-duration: 1.5s;
+  }
+  @keyframes lang-fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* html books */
+  /* .html div { 
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+    justify-content: space-around;
+   } */
+  .html img {
+    width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px 6px rgba(76, 96, 97, 0.767);
+  }
+  .html {
+    /* width: 95%; */
+    position: relative;
+    /* margin: auto; */
+  }
+  /* arrow scrolling */
+  .sliderow3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* width: 90%; */
+  }
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover*/
+  .prev:hover,
+  .next:hover {
+    background-color: rgb(49, 52, 66);
+  }
+  
+  /* Fading animation */
+  .html .fade {
+    animation-name: lang-fade;
+    animation-duration: 1.5s;
+  }
+  @keyframes lang-fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* css books */
+  /* .css div { 
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+    justify-content: space-around;
+  } */
+  .css img {
+    width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px 6px rgba(76, 96, 97, 0.767);
+  }
+  .css {
+    /* width: 95%; */
+    position: relative;
+    /* margin: auto; */
+  }
+  /* arrow scrolling */
+  .sliderow4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* width: 90%; */
+  }
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover*/
+  .prev:hover,
+  .next:hover {
+    background-color: rgb(49, 52, 66);
+  }
+  
+  /* Fading animation */
+  .css .fade {
+    animation-name: lang-fade;
+    animation-duration: 1.5s;
+  }
+  @keyframes lang-fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* java books */
+  /* .java div { 
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+    justify-content: space-around;
+  /* } */
+  .java img {
+    width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px 6px rgba(76, 96, 97, 0.767);
+  }
+  .java {
+    /* width: 95%; */
+    position: relative;
+    /* margin: auto; */
+  }
+  /* arrow scrolling */
+  .sliderow5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* width: 90%; */
+  }
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover*/
+  .prev:hover,
+  .next:hover {
+    background-color: rgb(49, 52, 66);
+  }
+  
+  /* Fading animation */
+  .java .fade {
+    animation-name: lang-fade;
+    animation-duration: 1.5s;
+  }
+  @keyframes lang-fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* python books */
+  /* .python div { 
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+    justify-content: space-around;
+  /* } */
+  .python img {
+    width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px 6px rgba(76, 96, 97, 0.767);
+  }
+  .python {
+    /* width: 95%; */
+    position: relative;
+    /* margin: auto; */
+  }
+  /* arrow scrolling */
+  .sliderow6 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* width: 90%; */
+  }
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover*/
+  .prev:hover,
+  .next:hover {
+    background-color: rgb(49, 52, 66);
+  }
+  
+  /* Fading animation */
+  .python .fade {
+    animation-name: lang-fade;
+    animation-duration: 1.5s;
+  }
+  @keyframes lang-fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
