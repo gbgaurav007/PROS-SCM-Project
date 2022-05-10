@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="libraryPage.css">
+</head>
+<body>
+
+    <!-- header navigation bar -->
+    <header>
+        <div class="nav_bar">
+                <div class="logo"><img src="Images/logo.png" alt="Logo" height="60px" width="150px"></div>
+                <div class="home"><a  href="new main page.html">Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+                <div onclick="myfunction()"><a href="assignment.html" target="_blank">Assignment</a></div>
+                <div class="search"> 
+                    <fieldset>
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search">
+                    <i class="fa fa-microphone"></i>
+                    </fieldset> 
+                </div>
+                <div class="dropdown">
+                    <select name="" id="">
+                        <option value="#categories" >Categories</option>
+                        <option value="#clang">C</option>
+                        <option value="#cpluspluslang">C++</option>
+                        <option value="#html">HTML</option>
+                        <option value="#css">CSS</option>
+                        <option value="#java">Java</option>
+                        <option value="#python">Python</option>
+                    </select>
+                </div>
+        </div>  
+        <div class="header2">
+          <div class="logo"><img src="Images/logo.png" alt="Logo" height="60px" width="150px"></div>
+          <div class="dropdown">
+            <select name="" id="">
+                <option value="#categories" >Categories</option>
+                <option value="#clang">C</option>
+                <option value="#cpluspluslang">C++</option>
+                <option value="#html">HTML</option>
+                <option value="#css">CSS</option>
+                <option value="#java">Java</option>
+                <option value="#python">Python</option>
+            </select>
+        </div>
+        </div>
+    </header>
+
+    <!-- js of alert -->
+    <script>
+      function myfunction(){
+        alert("LETS TEST YOUR SKILLS \n ALL THE BEST :)")
+      }
+    </script>
+
+    <!-- main -->
+    <main>
+
+        <!-- caraousel -->
+        <!-- secton1 of images scrolling -->
+        <div class="slideshow-container">
+             <div class="mySlides fade">
+              <img src="https://th.bing.com/th/id/R.8882b2b73b0b746b0bcee44f5d632b9e?rik=%2bHFV%2fC8pL1fNVw&riu=http%3a%2f%2fwww.unza.zm%2fsites%2fdefault%2ffiles%2finline-images%2fLibrary_img.jpg&ehk=cPZz%2fOMpjazbepRE9DExRf6FjJSNHllPJrZSjpUX9S4%3d&risl=&pid=ImgRaw&r=0">
+            </div> 
+            <div class="mySlides fade">
+              <img src="https://www.bundabergnow.com/wp-content/uploads/2019/10/coding.jpg">             
+            </div>  
+            <div class="mySlides fade">
+                <img src="https://th.bing.com/th/id/R.5e738ebc91bdc176c5882951e090c7ba?rik=5VYcQO%2bOXuVadw&riu=http%3a%2f%2fwww.techyv.com%2fsites%2fdefault%2fusers%2fsuperuser%2fdepositphotos_43853639-stock-photo-word-cloud-programming-languages-or.jpg&ehk=13ssJr4lY5HTnfEfPtOgFvt51Hz8LY7Nw59oqurTgE4%3d&risl=&pid=ImgRaw&r=0">             
+            </div>           
+            <div class="mySlides fade">             
+              <img src="https://www.connectria.com/wp-content/uploads/2019/06/cloud_technology_trends.jpeg" >           
+            </div> 
+            </div>
+            </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+
+        </div>
+
+        <!-- js script for automatic scrolling -->
+            <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
+
+        <!-- categories -->
+        <div class="categories" id="categories">
+            <h1 style="letter-spacing: 10px;">Categories</h1>
+                <div>
+                <table>
+                <tr>
+                    <td><img src="https://th.bing.com/th/id/OIP.BMy_269olQhtwlDErvOonAHaDh?pid=ImgDet&rs=1" alt="" class="rotate linear infinite"></td>
+                    <td></td>
+                    <td class="zoom"><h4>C Lang.</h4> <br> C was adopted as a system <br> development language because it <br> produces code that runs <br> nearly as fast as the <br> code written in assembly language. </td>
+                </tr>
+                </table>
+                <table>
+                <tr>
+                    <td><img src="https://a0.anyrgb.com/pngimg/1952/1778/c-programming-language-c-programming-language-generalpurpose-programming-language-compiler-programming-language-source-code-programmer-programming-computer-programming-c-thumbnail.png" alt="" class="rotate linear infinite"></td>
+                    <td></td>
+                    <td class="zoom"><h4>C++ Lang.</h4> <br> C++ is a cross-platform language <br> that can be used to create <br> high-performance applications.</td>
+                </tr>
+            </table>
+            </table>
+            </div>
+            <div>
+                <table>
+                <tr>
+                    <td><img src="https://th.bing.com/th/id/R.43e1f6bef551fb8258d714416d623ce1?rik=W8u1Buk%2bvy0%2fCg&riu=http%3a%2f%2fmsatechnosoft.in%2fblog%2fwp-content%2fuploads%2f2017%2f04%2fWeb-Design-using-HTML-msa-technosoft.png&ehk=qwA%2blGkFCvU3%2bBOL%2fz8Pun7F8dBlVE1Ntc8kAm4AlQc%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="" class="rotate linear infinite"></td>
+                    <td></td>
+                    <td class="zoom"><h4>HTML</h4> <br> Hypertext Markup Language is <br> the standard markup language <br> for documents designed <br> to be displayed in <br> a web browser. </td>
+                </tr>
+                </table>
+                <table>
+                <tr>
+                    <td><img src="https://th.bing.com/th/id/OIP.t8LlCJIKEWi5TeqGdfoxHQHaJ3?pid=ImgDet&rs=1" alt="" class="rotate linear infinite"></td>
+                    <td></td>
+                    <td class="zoom"><h4>CSS</h4> <br>Cascading Style Sheets (CSS) is <br> a style sheet language used <br> for describing the presentation <br> of a document written in <br> a markup language such as HTML.</td>
+                </tr>
+            </table>
+            </table>
+            </div>
+            <div>
+                <table>
+                <tr>
+                    <td><img src="https://th.bing.com/th/id/R.4f3b37b37b55aed0c11c64cc915cf0b7?rik=jkCsmuSEw1YE2Q&riu=http%3a%2f%2fzeptosystems.com%2fwp-content%2fuploads%2f2018%2f10%2fjava-1.jpg&ehk=HovaxzZAqHPCIjSELmwew9GO%2b5dvz2XtBgAezfMtUzA%3d&risl=&pid=ImgRaw&r=0" alt="" class="rotate linear infinite"></td>
+                    <td></td>
+                    <td class="zoom"><h4>Java</h4> <br> Java is an object-oriented, <br> class-based, concurrent, secured and <br> general-purpose computer-programming <br> language. It is a widely used <br> robust technology.  </td>
+                </tr>
+                </table>
+                <table>
+                <tr>
+                    <td><img src="https://cms.globalacademicresearch.com/IAH_AU/data/image_upload/1478263587maxresdefault-min.jpg" alt="" class="rotate linear infinite"></td>
+                    <td></td>
+                    <td class="zoom"><h4>Python</h4> <br> Python is a programming language. <br> Python can be used on <br> a server to create web <br> applications.</td>
+                </tr>
+            </table>
+            </table>
+            </div>      
+        </div>
+
+
+         <!-- c lang -->
+         <div class="clang" id="clang">
+            <h1 class="italics">C Lang.</h1>
+              <div><a class="prev" onclick="newSlide1()">&#10094;</a></div>
+            <div class="sliderow fade" id="slide1">
+                <div>
+                <a href="https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxnanVoYWN8Z3g6NTFiY2ExMDdkYTI5YmRmZA"><img src="https://cdn01.sapnaonline.com/product_media/9789332549449/md_9789332549449_180920201143700.jpg" alt="" class="zoom"></a>
+                </div>
+                <div>
+                <a href="https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxnanVoYWN8Z3g6NTFiY2ExMDdkYTI5YmRmZA"><img src="https://th.bing.com/th/id/R.7b8d75cbbf271719961df7e22143dc71?rik=OL3AaCZOb879Dw&riu=http%3a%2f%2fecx.images-amazon.com%2fimages%2fI%2f41zYglL0WSL._SY344_BO1%2c204%2c203%2c200_.jpg&ehk=AkJskzNs%2fBjgdH%2fmkbNTNXjerjux1ktJgvgl7HWIGFM%3d&risl=&pid=ImgRaw&r=0" alt="" class="zoom"></a> </div> 
+                <div>
+                <a href="https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxnanVoYWN8Z3g6NTFiY2ExMDdkYTI5YmRmZA"><img src="https://th.bing.com/th/id/R.9a231ec16291823169b76c094ab59a20?rik=9gGMJ1Zrjnl%2bzg&riu=http%3a%2f%2fecx.images-amazon.com%2fimages%2fI%2f41qX6YdIJ7L._SX379_BO1%2c204%2c203%2c200_.jpg&ehk=HpVo6SStz8VIAKTFF2JxZetuk%2bXNxKdzqMkfHhkfzhk%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="" class="zoom"></a> </div>
+                <div>
+                <a href="https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxnanVoYWN8Z3g6NTFiY2ExMDdkYTI5YmRmZA"><img src="https://th.bing.com/th/id/R.a7323f60d0067f0432d766daf44e0528?rik=8Fj62WenD7ma4Q&riu=http%3a%2f%2fbookangel.co.uk%2fcoverimages%2fpage%2fB014481462.jpg&ehk=pivH8IGcq%2fi2uukv8QoCB9f9dkLAXvOXinCGDVXEkeY%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="" class="zoom"></a> </div>
+                <div>
+                <a href="https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxnanVoYWN8Z3g6NTFiY2ExMDdkYTI5YmRmZA"><img src="https://www.thecrazyprogrammer.com/wp-content/uploads/2015/04/Programming-in-ANSI-C.jpg" alt="" class="zoom"></a>
+                </div>
+            </div>
+            <div class="sliderow-hide fade" id="slide2">
+                <div>
+                <a href="https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxnanVoYWN8Z3g6NTFiY2ExMDdkYTI5YmRmZA"><img src="https://images-na.ssl-images-amazon.com/images/I/51hoAOkVkQL._SY291_BO1,204,203,200_QL40_ML2_.jpg" alt="" class="zoom"></a> </div>
+                <div>
+                <a href="https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxnanVoYWN8Z3g6NTFiY2ExMDdkYTI5YmRmZA"><img src="https://content.kopykitab.com/ebooks/2014/07/3420/content/medium/page1.png" alt="" class="zoom"></a> </div>
+                <div>
+                <a href="https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxnanVoYWN8Z3g6NTFiY2ExMDdkYTI5YmRmZA"><img src="https://th.bing.com/th/id/OIP.tD5ztqzN0MfNFIKe0bXovQHaJz?pid=ImgDet&rs=1" alt="" class="zoom"></a> </div>
+                <div>
+                <a href="https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxnanVoYWN8Z3g6NTFiY2ExMDdkYTI5YmRmZA"><img src="https://th.bing.com/th/id/R.181d028e8a25df12dddd605d29bb67a6?rik=HmdnD6WOfHja4w&riu=http%3a%2f%2fwww.bookganga.com%2feBooks%2fContent%2fimages%2fbooks%2f90e6190f415145eb9e6ec9b3dd6d60fd.jpg&ehk=Oc5wRhPhXahRxIEMfLPGtvnXI7XUvBA6T7AcDe6AZs4%3d&risl=&pid=ImgRaw&r=0" alt="" class="zoom"></a> </div>
+                <div>
+               <a href="https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxnanVoYWN8Z3g6NTFiY2ExMDdkYTI5YmRmZA"><img src="https://th.bing.com/th/id/OIP.6XgUBORZD8dnUC38LlcI-AHaJ3?pid=ImgDet&rs=1" alt="" class="zoom"></a>
+                </div>
+           </div>
+           <div><a class="next" onclick="newSlide2()">&#10095;</a> </div>
+
+        </div>
+
+         <!--  arrow scrolling of clang -->
+         <script>
+           slide1=document.getElementById("slide1")
+           slide2=document.getElementById("slide2")
+           function newSlide2(){
+             slide1.style.display="none";
+             slide2.style.display="flex";
+           }
+           function newSlide1(){
+             slide1.style.display="flex";
+             slide2.style.display="none";
+           }
+           
+         </script>
+        <!-- <script> 
+        var slideIndex2 = 1;
+        showSlides2(slideIndex2);
+        
+        function plusSlides(n) {
+          showSlides2(slideIndex2 += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides2(slideIndex2 = n);
+        }
+        
+        function showSlides2(n) {
+          var i;
+          var slides2 = document.getElementsByClassName("sliderow");
+          if (n > slides2.length) {slideIndex2 = 1}    
+          if (n < 1) {slideIndex2 = slides2.length}
+          for (i = 0; i < slides2.length; i++) {
+              slides2[i].style.display = "none";  
+          }
+          slides2[slideIndex2-1].style.display = "flex"; 
+          
+        }
+         </script> -->
+
+       
+         <!-- c++ lang -->
+         <div class="cpluspluslang" id="cpluspluslang">
+            <h1 class="italics">C++ Lang.</h1>
+            <div class="sliderow2 fade">
+                <div>
+                <a href="http://e-maxx.ru/bookz/files/stroustrup.pdf" ><img src="https://th.bing.com/th/id/OIP.D8pVt_amyKiH90o3WOJglwHaJD?pid=ImgDet&rs=1" alt="" class="zoom"></a>
+                </div>
+                <div>
+                <a href="http://e-maxx.ru/bookz/files/stroustrup.pdf"><img src="https://images-na.ssl-images-amazon.com/images/I/41sSdIagIhL.jpg" alt="" class="zoom"></a>
+                </div>
+                <div>
+                <a href="http://e-maxx.ru/bookz/files/stroustrup.pdf"><img src="https://qph.fs.quoracdn.net/main-qimg-9ecf91175a15203e5c2786bcec9502e0" alt="" class="zoom"></a>
+                </div>
+                <div>
+                <a href="http://e-maxx.ru/bookz/files/stroustrup.pdf"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Understanding_C%2B%2B.svg/575px-Understanding_C%2B%2B.svg.png" alt="" class="zoom"></a>
+                </div>
+                <div>
+                <a href="http://e-maxx.ru/bookz/files/stroustrup.pdf"><img src="https://worldstudypoint.com/wp-content/uploads/2021/03/8633-min-363x400.jpg" alt="" class="zoom"></a>
+                </div>
+            </div>
+            <div class="sliderow2 fade">
+                <div>
+                <a href="http://e-maxx.ru/bookz/files/stroustrup.pdf"><img src="https://th.bing.com/th/id/R.02a40beeb1807aa38365833fec105183?rik=lLd3fsKGolNjhA&riu=http%3a%2f%2fbcbbook.rkaiser.de%2fCover0.jpg&ehk=uG%2fN6UbMzAyrJkJgiiOi%2fFT4y0GRD594EpiHEU2Hn6Q%3d&risl=&pid=ImgRaw&r=0" alt="" class="zoom"></a> </div>
+                <div>
+                <a href="http://e-maxx.ru/bookz/files/stroustrup.pdf"><img src="https://images-na.ssl-images-amazon.com/images/I/517Lc3XYsaL.jpg" alt="" class="zoom"></a> </div> 
+                <div>
+                <a href="http://e-maxx.ru/bookz/files/stroustrup.pdf"><img src="https://imgv2-2-f.scribdassets.com/img/word_document/429964204/original/65f9180fd3/1614881091?v=1" alt="" class="zoom"></a> </div>
+                <div>
+                <a href="http://e-maxx.ru/bookz/files/stroustrup.pdf"><img src="https://th.bing.com/th/id/OIP.GQyDaRIocHct07DXSLCsEQHaJI?pid=ImgDet&rs=1" alt="" class="zoom"></a></div>
+                <div>
+               <a href="http://e-maxx.ru/bookz/files/stroustrup.pdf"><img src="https://th.bing.com/th/id/OIP.M3PyqQHjzN-8LXC-UH5RugAAAA?pid=ImgDet&rs=1" alt="" class="zoom"></a>
+                </div>
+           </div>
+
+           <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+           <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+
+        </div>
+
+         <!-- js script of arrow scrolling of c++ -->
+        <script>
+        var slideIndex3 = 1;
+        showSlides3(slideIndex3);
+        
+        function plusSlides2(n) {
+          showSlides3(slideIndex3 += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides3(slideIndex3= n);
+        }
+        
+        function showSlides3(n) {
+          var i;
+          var slides2 = document.getElementsByClassName("sliderow2");
+          if (n > slides2.length) {slideIndex3 = 1}    
+          if (n < 1) {slideIndex3 = slides2.length}
+          for (i = 0; i < slides2.length; i++) {
+              slides2[i].style.display = "none";  
+          }
+          slides2[slideIndex3-1].style.display = "flex";  
+        }
+        </script>
+         
+
+
+
+    </main>
+
+    
+</body>
+</html>
