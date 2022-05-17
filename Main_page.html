@@ -121,3 +121,102 @@
             <tr>
                 <td>
                     <strong><h3>Pros</h3></strong><br>
+                    <a href="#">About</a><br>
+                    <a href="#">What We Offer</a><br>
+                    <a href="#">Leadership</a><br>
+                    <a href="#">Careers</a><br>
+                    <a href="#">Catalog</a><br>
+                    <a href="#">Proffesional certificates</a><br>
+                    <a href="#">For Enterprise</a><br>
+                    <a href="#"> For Goverment</a><br>
+                    <a href="#">For Campus</a><br>
+                    <a href="#"> Become a partner</a><br>
+                </td>
+                <td>
+                    <strong><h3>Community</h3></strong><br>
+                    <a href="#">Learners</a><br>
+                    <a href="#">Partners</a><br>
+                    <a href="#">developers</a><br>
+                    <a href="#">Beta testers</a><br>
+                    <a href="#">Translators</a><br>
+                    <a href="#">Blog</a><br>
+                    <a href="#">Tech Blog</a><br>                  
+                </td>
+                <td>
+                    <strong><h3>More</h3></strong><br>
+                    <a href="#">Press</a><br>
+                    <a href="#">Investors</a><br>
+                    <a href="#">Terms</a><br>
+                    <a href="#">Privacy</a><br>
+                    <a href="#">Help</a><br> 
+                    <a href="#">Accessibilty</a><br>
+                    <a href="#"> contact</a><br>
+                    <a href="#">articles</a><br>
+                    <a href="#">Affilates</a><br>
+                </td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td>
+            </tr>
+        </table>
+    </footer>
+   <script>
+const body = document.body;
+let lastScroll = 0;
+
+window.addEventListener("scroll", () => {
+  const scrollValue = window.pageYOffset;
+
+  if (scrollValue > lastScroll && !body.classList.contains("scroll-down")) {
+    body.classList.remove("scroll-up");
+    body.classList.add("scroll-down");
+  }
+
+  if (scrollValue < lastScroll && body.classList.contains("scroll-down")) {
+    body.classList.remove("scroll-down");
+  }
+
+  lastScroll = scrollValue;
+});
+    </script>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let mountains_front = document.getElementById('mountains_front');
+        let welcome = document.getElementById('welcome');
+        let btn = document.getElementById('btn');
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+             stars.style.left= value * 0.25 +'px'
+             moon.style.top= value * 1.5 +'px'
+             mountains_behind.style.top= value * 0.5 +'px'
+             mountains_front.style.top= value * 0 +'px'
+             welcome.style.marginRight= value * 4 +'px'
+             welcome.style.marginTop= value * 1.5 +'px'
+             btn.style.marginTop= value * 1.5 +'px'
+        })
+    </script>
+    <script>
+
+const sliders = document.querySelectorAll(".slide");
+const scrollOptions = { rootMargin: "-150px" };
+
+const onScroll = new IntersectionObserver((entries, onScroll) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("show");
+      onScroll.unobserve(entry.target);
+    }
+  });
+}, scrollOptions);
+
+sliders.forEach((slide) => {
+  onScroll.observe(slide);
+});
+    </script>
+</body>
+</html>
