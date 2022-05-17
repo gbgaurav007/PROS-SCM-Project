@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Play', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #000000;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5);
+    transition: all 300ms ease-in-out;
+}
+  
+.scroll-down nav {
+    transform: translate3d(0, -100%, 0);
+}
+  
+.left-container {
+    width: 62%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+  
+.logo {
+    letter-spacing: 3px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: large;
+    padding-left: 10px;
+}  
+.cat {
+    font-size: 14px;
+}
+  
+.cat a {
+    text-decoration: none;
+    color: white;
+}
+  
+.cat a:hover {
+    color: rgba(255, 255, 255, 0.713);
+}
+  
+.search input {
+    color: white;
+    height: 50px;
+    width: 590px;
+    border-radius: 25px;
+    background-color: rgb(44, 52, 56,0.7);
+    backdrop-filter: blur(5px);
+    border-style: none;
+    border: 1px solid #83929f;
+    padding: 0 1.5em;
+}
+  
+.nav-links {
+    width: 38%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+  
+.nav-links li {
+    list-style: none;
+}
+  
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+  
+.nav-links .cat:hover {
+    color: rgba(255, 255, 255, 0.713);
+}
+  
+.login,
+.connect {
+    border: 1px solid white;
+    padding: 7px;
+}
+  
+.gg-shopping-cart:hover {
+    color: rgba(255, 255, 255, 0.713);
+}
+  
+.signup {
+    padding: 7px;
+}
+  
+.signup:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+  
+a {
+    text-decoration: none;
+    color: white;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #000, rgba(10, 9, 9, 0));
+    z-index: 1000;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section img#moon {
+    mix-blend-mode: screen;
+}
+section img#mountains_front{
+    z-index: 10;
+}
+#welcome {
+    position: absolute;
+    right: -100px;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+    background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+#btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.6);
+    color: rgba(28, 5, 34,0.5);
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(100px);
+    transition: 0.5s;
+}
+#btn:hover {
+    color: rgba(28, 5, 34,1); 
+    background: rgba(255, 255, 255, 0.2);
+}
+#btn span {
+    display: block;
+    position: absolute;
+    background: rgba(28, 5, 34);
+}
+#btn span:nth-child(1) {
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+#btn:hover span:nth-child(1) {
+    transform: scaleY(1);
+    transform-origin: bottom ;
+    transition: transform 0.5s;
+}
+#btn span:nth-child(2) {
+    left: 0;
+    bottom: 0;
+    width: 100% ;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+#btn:hover span:nth-child(2) {
+    transform: scaleY(1);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+#btn span:nth-child(3) {
+    right: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+#btn:hover span:nth-child(3) {
+    transform: scaleY(1);
+    transform-origin: bottom ;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+#btn span:nth-child(4) {
+    left: 0;
+    top: 0;
+    width: 100% ;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+#btn:hover span:nth-child(4) {
+    transform: scaleY(1);
+    transform-origin: left;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+.main-one, .main-two, .main-three, .main-four, .main-front { 
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:80vh;
+    margin: 40px;
+    border-radius: 17px;
+    box-shadow: 0 15px 25px rgb(0, 0, 0, 0
